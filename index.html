@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="heading">
+        <h1> Welcome to my Fantastic QUIZ !!!!!!</h1>
+    </div>
+    <div class="container">
+        <form>
+            <div>
+                <label for="Username">Enter your name : </label>
+                <input type="text" id="Username" name="Username" required> 
+            </div>
+            <div>
+                <div class="ques"><label for="topic">Which topic would you like to choose?</label></div> <br>
+                <input type="radio" value="vampire" id="topic" name="topic" required>Vampire Diaries <br>
+                <input type="radio" value="space" id="topic" name="topic">Space Related
+            </div> 
+            <button type="button"> Start Quiz </button>
+        </form>
+    </div>
+    <div class="quiz">
+        <div class="heading name-topic">
+            <h2> Topic : <span class="topic2"> Vampire Diaries </span></h2>
+            <h2>Name : <span class="name2"> Anonymous </span></h2>
+            <div id="timer">4:00</div>
+        </div>
+        
+        <div class="answer">
+                
+        </div>
+        <button id="submit"> Submit </button>
+
+        <p class="remark"></p>
+
+        <button class="restart"> Restart Quiz </button>
+    </div>
+    
+
+    <script src="quiz.js"></script>
+    
+</body>
+</html>
